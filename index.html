@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Okean Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="fontawesome-free-6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="scroll-progress"></div>
+    <div id="particles-js"></div>
+
+    <header class="header">
+        <div class="logo">Portfolio</div>
+        <div class="header-right">
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <a href="CV_SE_LETRUONG.png" download class="download-cv-btn header-cv-btn">
+                <i class="fa-solid fa-download" style="margin-right:8px;"></i>Download CV
+            </a>
+        </div>
+    </header>
+
+    <div class="social-links">
+        <a class="social-link" href="https://www.facebook.com/profile.php?id=61577885874288" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a class="social-link" href="https://www.youtube.com/@phamletruong4450" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a class="social-link" href="https://www.tiktok.com/@letruong.2001" target="_blank">
+            <i class="fa-brands fa-tiktok"></i>
+        </a>
+        <a class="social-link" href="https://x.com/truongle_89201" target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a class="social-link" href="https://github.com/okean8901" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+    </div>
+
+    <section class="hero section-animate" id="home">
+        <div class="hero-content">
+            <h1 data-text="John Doe">Lê Trường</h1>
+            <p>Software Engineer</p>
+            <div class="profile-image">
+                <img src="avt.jpg" alt="Profile">
+            </div>
+        </div>
+    </section>
+
+    <section class="skills section-animate" id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Programming Languages</h3>
+                <p>Proficient in C#, ASP.NET Core MVC</p>
+                <div class="skill-level">
+                    <div class="skill-progress" style="width: 90%"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>Web Development</h3>
+                <p>Knowledge of HTML, CSS, JavaScript</p>
+                <div class="skill-level">
+                    <div class="skill-progress" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>Database Management</h3>
+                <p>SQL Server, My SQL</p>
+                <div class="skill-level">
+                    <div class="skill-progress" style="width: 75%"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>Tools & Platforms</h3>
+                <p>Visual Studio, Git, GitHub </p>
+                <div class="skill-level">
+                    <div class="skill-progress" style="width: 80%"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects section-animate" id="projects">
+        <h2>My Projects</h2>
+        <div class="project-filters">
+            <button class="filter-btn active">All</button>
+            <button class="filter-btn">Web</button>
+            <button class="filter-btn">Mobile</button>
+        </div>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="apdp.png" alt="Project 1">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live</a>
+                            <a href="#" class="project-link">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Project One</h3>
+                    <p>Student Information Management System</p>
+                    <div class="project-tags">
+                        <span class="project-tag">ASP.NET Core MVC</span>
+                        <span class="project-tag">Entity Framework Core</span>
+                        <span class="project-tag">SQL Server</span>
+                        <span class="project-tag">And More...</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="okeanmobile.png" alt="Project 2">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live</a>
+                            <a href="#" class="project-link">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Project Two</h3>
+                    <p>Okean Mobile - E-commerce Platform</p>
+                    <div class="project-tags">
+                        <span class="project-tag">ASP.NET Core MVC</span>
+                        <span class="project-tag">Entity Framework Core</span>
+                        <span class="project-tag">Azure AI Services</span>
+                        <span class="project-tag">And More...</span>
+                    </div>
+                </div>
+            </div>
+            <!-- More project cards... -->
+        </div>
+    </section>
+
+    <section class="contact section-animate" id="contact">
+        <h2>Get In Touch</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <input type="text" required id="name">
+                <label for="name">Your Name</label>
+            </div>
+            <div class="form-group">
+                <input type="email" required id="email">
+                <label for="email">Your Email</label>
+            </div>
+            <div class="form-group">
+                <textarea required id="message" rows="5"></textarea>
+                <label for="message">Your Message</label>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+
+    <section class="download-cv-section section-animate" id="download-cv" style="text-align:center; padding: 80px 0; background: rgba(0,0,0,0.6);">
+        <h2 style="margin-bottom: 30px; font-size: 2rem; color: var(--primary-color);">Download My CV</h2>
+        <a href="CV_SE_LETRUONG.png" download class="download-cv-btn" style="display:inline-block; padding: 15px 40px; font-size: 1.1rem; border-radius: 30px; background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); color: #fff; text-decoration: none; font-weight: 600; box-shadow: 0 4px 20px rgba(3,233,244,0.15); transition: background 0.3s, transform 0.2s;">
+            <i class="fa-solid fa-download" style="margin-right:10px;"></i>Download CV
+        </a>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Portfolio. All rights reserved by LeTruong(Okean).</p>
+    </footer>
+
+    <div class="theme-toggle">🌓</div>
+</body>
+</html>
