@@ -3,177 +3,423 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Okean Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Pham Le Truong - Software Engineering Intern</title>
+    <meta name="description" content="Software Engineering Intern specializing in ASP.NET Core, Azure AI Services, and full-stack development">
+    <meta name="keywords" content="Software Engineering Intern, ASP.NET Core, Azure AI, Full Stack Developer, C#, Web Development">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
     <link rel="stylesheet" href="fontawesome-free-6.5.2/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
+    <!-- Scroll Progress Bar -->
     <div class="scroll-progress"></div>
+    
+    <!-- Particle Background -->
     <div id="particles-js"></div>
 
+    <!-- Header -->
     <header class="header">
-        <div class="logo">Portfolio</div>
-        <div class="header-right">
-            <nav class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </nav>
-            <a href="PhamLeTruong_Resume.pdf" download class="download-cv-btn header-cv-btn">
-                <i class="fa-solid fa-download" style="margin-right:8px;"></i>Download CV
-            </a>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="#home">Portfolio</a>
+                </div>
+                
+                <nav class="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#skills" class="nav-link">Skills</a></li>
+                        <li><a href="#projects" class="nav-link">Projects</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="PhamLeTruong_Resume.pdf" download class="download-cv-btn">
+                        <i class="fa-solid fa-download"></i>
+                        <span>Download CV</span>
+                    </a>
+                    
+                    <!-- Mobile Menu Toggle -->
+                    <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
         </div>
     </header>
 
-    <div class="social-links">
-        <a class="social-link" href="https://www.facebook.com/profile.php?id=61577885874288" target="_blank">
+    <!-- Social Links -->
+    <aside class="social-links">
+        <a class="social-link" href="https://www.facebook.com/profile.php?id=61577885874288" target="_blank" aria-label="Facebook">
             <i class="fa-brands fa-facebook"></i>
         </a>
-        <a class="social-link" href="https://www.youtube.com/@phamletruong4450" target="_blank">
+        <a class="social-link" href="https://www.youtube.com/@phamletruong4450" target="_blank" aria-label="YouTube">
             <i class="fa-brands fa-youtube"></i>
         </a>
-        <a class="social-link" href="https://www.tiktok.com/@letruong.2001" target="_blank">
+        <a class="social-link" href="https://www.tiktok.com/@letruong.2001" target="_blank" aria-label="TikTok">
             <i class="fa-brands fa-tiktok"></i>
         </a>
-        <a class="social-link" href="https://x.com/truongle_89201" target="_blank">
+        <a class="social-link" href="https://x.com/truongle_89201" target="_blank" aria-label="Twitter">
             <i class="fa-brands fa-twitter"></i>
         </a>
-        <a class="social-link" href="https://github.com/okean8901" target="_blank">
+        <a class="social-link" href="https://github.com/okean8901" target="_blank" aria-label="GitHub">
             <i class="fa-brands fa-github"></i>
         </a>
-    </div>
+    </aside>
 
-    <section class="hero section-animate" id="home">
-        <div class="hero-content">
-            <h1 data-text="John Doe">Lê Trường</h1>
-            <p>Software Engineer</p>
-            <div class="profile-image">
-                <img src="avt.jpg" alt="Profile">
-            </div>
-        </div>
-    </section>
-
-    <section class="skills section-animate" id="skills">
-        <h2>My Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <h3>Programming Languages</h3>
-                <p>Proficient in C#, ASP.NET Core MVC</p>
-                <div class="skill-level">
-                    <div class="skill-progress" style="width: 90%"></div>
-                </div>
-            </div>
-            <div class="skill-card">
-                <h3>Web Development</h3>
-                <p>Knowledge of HTML, CSS, JavaScript</p>
-                <div class="skill-level">
-                    <div class="skill-progress" style="width: 85%"></div>
-                </div>
-            </div>
-            <div class="skill-card">
-                <h3>Database Management</h3>
-                <p>SQL Server, My SQL</p>
-                <div class="skill-level">
-                    <div class="skill-progress" style="width: 75%"></div>
-                </div>
-            </div>
-            <div class="skill-card">
-                <h3>Tools & Platforms</h3>
-                <p>Visual Studio, Git, GitHub </p>
-                <div class="skill-level">
-                    <div class="skill-progress" style="width: 80%"></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="projects section-animate" id="projects">
-        <h2>My Projects</h2>
-        <div class="project-filters">
-            <button class="filter-btn active">All</button>
-            <button class="filter-btn">Web</button>
-            <button class="filter-btn">Mobile</button>
-        </div>
-        <div class="project-grid">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="apdp.png" alt="Project 1">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="#" class="project-link">Live</a>
-                            <a href="#" class="project-link">Code</a>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero section-animate" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">Pham Le Truong</h1>
+                        <p class="hero-subtitle">Software Engineering Intern</p>
+                        <p class="hero-description">Motivated and detail-oriented Software Engineering Intern with strong expertise in C#, ASP.NET Core MVC, and SQL Server. Proven ability to design, develop, and optimize web applications with secure user management, RESTful APIs, and AI integration.</p>
+                        <div class="hero-actions">
+                            <a href="#projects" class="btn btn-primary">View Projects</a>
+                            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="profile-image">
+                            <img src="IMG/avt.jpg" alt="Pham Le Truong - Software Engineering Intern">
                         </div>
                     </div>
                 </div>
-                <div class="project-content">
-                    <h3>Project One</h3>
-                    <p>Student Information Management System</p>
-                    <div class="project-tags">
-                        <span class="project-tag">ASP.NET Core MVC</span>
-                        <span class="project-tag">Entity Framework Core</span>
-                        <span class="project-tag">SQL Server</span>
-                        <span class="project-tag">And More...</span>
-                    </div>
-                </div>
             </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="okeanmobile.png" alt="Project 2">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="#" class="project-link">Live</a>
-                            <a href="#" class="project-link">Code</a>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section-animate" id="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I am a motivated and detail-oriented Software Engineering Intern with strong expertise in C#, ASP.NET Core MVC, and SQL Server. My focus is on creating intelligent, scalable solutions that solve real-world problems through secure user management, RESTful APIs, and AI integration.</p>
+                        <p>Currently pursuing Software Engineering at BTEC FPT British College, I have been awarded the Academic Achievement Award for Fall Semester 2024 in the Computing major. I bring innovative ideas to life through clean, efficient code and user-centered design.</p>
+                        <div class="education-info">
+                            <h3>Education</h3>
+                            <div class="education-item">
+                                <h4>BTEC FPT British College – Software Engineering</h4>
+                                <p>Mar 2023 – Present</p>
+                                <p class="achievement">🏆 Awarded Academic Achievement Award – Fall Semester 2024 (Computing major)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">4+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">8+</span>
+                            <span class="stat-label">Technologies</span>
                         </div>
                     </div>
                 </div>
-                <div class="project-content">
-                    <h3>Project Two</h3>
-                    <p>Okean Mobile - E-commerce Platform</p>
-                    <div class="project-tags">
-                        <span class="project-tag">ASP.NET Core MVC</span>
-                        <span class="project-tag">Entity Framework Core</span>
-                        <span class="project-tag">Azure AI Services</span>
-                        <span class="project-tag">And More...</span>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section-animate" id="skills">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3>Programming Languages & Frameworks</h3>
+                        <p>C#, .NET Framework, .NET Core, ASP.NET Core MVC</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <h3>Web Technologies</h3>
+                        <p>HTML5, CSS3, JavaScript (ES6+), Bootstrap, Tailwind CSS</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <h3>Databases</h3>
+                        <p>Microsoft SQL Server, MySQL</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-tools"></i>
+                        </div>
+                        <h3>Development Tools</h3>
+                        <p>Visual Studio, Git, GitHub, Entity Framework Core, LINQ</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <h3>AI & Cloud Services</h3>
+                        <p>Azure AI Services, RESTful API Development, MVC Architecture</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <h3>Soft Skills</h3>
+                        <p>Problem-Solving, Team Collaboration, Time Management, Adaptability</p>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- More project cards... -->
-        </div>
-    </section>
+        </section>
 
-    <section class="contact section-animate" id="contact">
-        <h2>Get In Touch</h2>
-        <form class="contact-form">
-            <div class="form-group">
-                <input type="text" required id="name">
-                <label for="name">Your Name</label>
+        <!-- Projects Section -->
+        <section class="projects section-animate" id="projects">
+            <div class="container">
+                <h2 class="section-title">My Projects</h2>
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="portfolio">Portfolio</button>
+                    <button class="filter-btn" data-filter="ai">AI</button>
+                    <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+                </div>
+                <div class="project-grid">
+                    <div class="project-card" data-category="web portfolio">
+                        <div class="project-image">
+                            <img src="IMG/portfolio.png" alt="Personal Portfolio Website">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/okean8901/OkeanPortfolio" target="_blank" class="project-link" aria-label="View Code">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project-link" aria-label="View Live">
+                                        <i class="fa-solid fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Personal Portfolio Website</h3>
+                            <p>Modern, responsive portfolio website showcasing professional experience and projects</p>
+                            <div class="project-details">
+                                <p><strong>Duration:</strong> Dec 2024 – Jan 2025</p>
+                                <p><strong>Role:</strong> Frontend Developer</p>
+                            </div>
+                            <div class="project-tags">
+                                <span class="project-tag">HTML5</span>
+                                <span class="project-tag">CSS3</span>
+                                <span class="project-tag">JavaScript</span>
+                                <span class="project-tag">Responsive Design</span>
+                                <span class="project-tag">Particles.js</span>
+                                <span class="project-tag">FontAwesome</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="ai web">
+                        <div class="project-image">
+                            <img src="IMG/AI_CV.png" alt="AI CV Analysis System">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/okean8901/AI_CV_WEB.git" target="_blank" class="project-link" aria-label="View Code">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>AI CV Analysis System</h3>
+                            <p>Intelligent Resume Analysis Platform with Azure AI Services integration</p>
+                            <div class="project-details">
+                                <p><strong>Duration:</strong> Jun 2025 – Ongoing</p>
+                                <p><strong>Role:</strong> Full Stack Developer</p>
+                            </div>
+                            <div class="project-tags">
+                                <span class="project-tag">ASP.NET Core 8.0</span>
+                                <span class="project-tag">Azure AI Services</span>
+                                <span class="project-tag">Entity Framework Core</span>
+                                <span class="project-tag">SQL Server</span>
+                                <span class="project-tag">Tailwind CSS</span>
+                                <span class="project-tag">OAuth</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="ecommerce web">
+                        <div class="project-image">
+                            <img src="IMG/okeanmobile.png" alt="Okean Mobile E-commerce Platform">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/okean8901/OkeanMobile_ASP.NET_MVC.git" target="_blank" class="project-link" aria-label="View Code">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Okean Mobile – E-commerce Platform</h3>
+                            <p>Comprehensive e-commerce solution with AI-powered features and secure payment integration</p>
+                            <div class="project-details">
+                                <p><strong>Duration:</strong> Apr 2025 – May 2025</p>
+                                <p><strong>Role:</strong> Full Stack Developer</p>
+                            </div>
+                            <div class="project-tags">
+                                <span class="project-tag">ASP.NET Core MVC</span>
+                                <span class="project-tag">Entity Framework Core</span>
+                                <span class="project-tag">Azure AI Services</span>
+                                <span class="project-tag">VNPay</span>
+                                <span class="project-tag">MailKit</span>
+                                <span class="project-tag">RESTful APIs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="IMG/apdp.png" alt="Student Information Management System">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/okean8901/SIMS_ASP.NET_MVC.git" target="_blank" class="project-link" aria-label="View Code">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <!-- <a href="https://sims-asp-net-mvc.vercel.app" target="_blank" class="project-link" aria-label="View Live">
+                                        <i class="fa-solid fa-external-link-alt"></i>
+                                    </a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Student Information Management System</h3>
+                            <p>Comprehensive system for managing student data, courses, enrollments, and user authentication with role-based access control</p>
+                            <div class="project-details">
+                                <p><strong>Duration:</strong> 2024</p>
+                                <p><strong>Role:</strong> Full Stack Developer</p>
+                            </div>
+                            <div class="project-tags">
+                                <span class="project-tag">ASP.NET Core MVC</span>
+                                <span class="project-tag">Entity Framework Core</span>
+                                <span class="project-tag">SQL Server</span>
+                                <span class="project-tag">Bootstrap</span>
+                                <span class="project-tag">Role-based Access</span>
+                                <span class="project-tag">User Authentication</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <input type="email" required id="email">
-                <label for="email">Your Email</label>
-            </div>
-            <div class="form-group">
-                <textarea required id="message" rows="5"></textarea>
-                <label for="message">Your Message</label>
-            </div>
-            <button type="submit" class="submit-btn">Send Message</button>
-        </form>
-    </section>
+        </section>
 
-    <section class="download-cv-section section-animate" id="download-cv" style="text-align:center; padding: 80px 0; background: rgba(0,0,0,0.6);">
-        <h2 style="margin-bottom: 30px; font-size: 2rem; color: var(--primary-color);">Download My CV</h2>
-        <a href="PhamLeTruong_Resume.pdf" download class="download-cv-btn" style="display:inline-block; padding: 15px 40px; font-size: 1.1rem; border-radius: 30px; background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); color: #fff; text-decoration: none; font-weight: 600; box-shadow: 0 4px 20px rgba(3,233,244,0.15); transition: background 0.3s, transform 0.2s;">
-            <i class="fa-solid fa-download" style="margin-right:10px;"></i>Download CV
-        </a>
-    </section>
+        <!-- Contact Section -->
+        <section class="contact section-animate" id="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>phamletruong2001@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Location</h3>
+                                <p>Nhan Chinh, Thanh Xuan, Ha Noi</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>0823 369 604</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-brands fa-github"></i>
+                            <div>
+                                <h3>GitHub</h3>
+                                <p>github.com/okean8901</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" required id="name">
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" required id="email">
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea required id="message" rows="5"></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
 
+        <!-- Download CV Section -->
+        <section class="download-cv-section section-animate">
+            <div class="container">
+                <h2 class="section-title">Download My CV</h2>
+                <p class="section-subtitle">Get a detailed overview of my experience and skills</p>
+                <a href="PhamLeTruong_Resume.pdf" download class="download-cv-btn large">
+                    <i class="fa-solid fa-download"></i>
+                    Download CV
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2025 Portfolio. All rights reserved by LeTruong(Okean).</p>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Portfolio. All rights reserved by Pham Le Truong.</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <div class="theme-toggle">🌓</div>
 </body>
 </html>
