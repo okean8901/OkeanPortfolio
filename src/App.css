@@ -937,8 +937,6 @@ body {
     color: var(--primary-color);
 }
 
-
-
 /* Animations */
 @keyframes fadeInUp {
     from {
