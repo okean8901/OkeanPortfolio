@@ -1,6 +1,11 @@
 import React, { useEffect } from 'react';
+import { useLanguage } from '../contexts/LanguageContext';
+import { translations } from '../translations/translations';
 
 const Skills = () => {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   useEffect(() => {
     const animateSkills = () => {
       const skillCards = document.querySelectorAll('.skill-card');
@@ -25,38 +30,38 @@ const Skills = () => {
   const skills = [
     {
       icon: 'fa-solid fa-code',
-      title: 'Programming Languages & Frameworks',
-      description: 'C#, .NET Framework, .NET Core, ASP.NET Core MVC',
+      title: t.skills.skillCategories.programming,
+      description: t.skills.skillDescriptions.programming,
       level: 90
     },
     {
       icon: 'fa-solid fa-globe',
-      title: 'Web Technologies',
-      description: 'HTML5, CSS3, JavaScript (ES6+), Bootstrap, Tailwind CSS',
+      title: t.skills.skillCategories.web,
+      description: t.skills.skillDescriptions.web,
       level: 85
     },
     {
       icon: 'fa-solid fa-database',
-      title: 'Databases',
-      description: 'Microsoft SQL Server, MySQL',
+      title: t.skills.skillCategories.database,
+      description: t.skills.skillDescriptions.database,
       level: 80
     },
     {
       icon: 'fa-solid fa-tools',
-      title: 'Development Tools',
-      description: 'Visual Studio, Git, GitHub, Entity Framework Core, LINQ',
+      title: t.skills.skillCategories.tools,
+      description: t.skills.skillDescriptions.tools,
       level: 85
     },
     {
       icon: 'fa-solid fa-brain',
-      title: 'AI & Cloud Services',
-      description: 'Azure AI Services, RESTful API Development, MVC Architecture',
+      title: t.skills.skillCategories.ai,
+      description: t.skills.skillDescriptions.ai,
       level: 75
     },
     {
       icon: 'fa-solid fa-users',
-      title: 'Soft Skills',
-      description: 'Problem-Solving, Team Collaboration, Time Management, Adaptability',
+      title: t.skills.skillCategories.soft,
+      description: t.skills.skillDescriptions.soft,
       level: 90
     }
   ];
@@ -64,7 +69,7 @@ const Skills = () => {
   return (
     <section className="skills section-animate" id="skills">
       <div className="container">
-        <h2 className="section-title">Technical Skills</h2>
+        <h2 className="section-title">{t.skills.title}</h2>
         <div className="skills-grid">
           {skills.map((skill, index) => (
             <div key={index} className="skill-card">

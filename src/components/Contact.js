@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useLanguage } from '../contexts/LanguageContext';
+import { translations } from '../translations/translations';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -7,6 +9,8 @@ const Contact = () => {
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const { language } = useLanguage();
+  const t = translations[language];
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -87,12 +91,12 @@ const Contact = () => {
     
     // Basic validation
     if (!formData.name || !formData.email || !formData.message) {
-      showNotification('Please fill in all fields', 'error');
+      showNotification(t.contact.notifications.fillFields, 'error');
       return;
     }
     
     if (!isValidEmail(formData.email)) {
-      showNotification('Please enter a valid email address', 'error');
+      showNotification(t.contact.notifications.validEmail, 'error');
       return;
     }
     
@@ -100,7 +104,7 @@ const Contact = () => {
     
     // Simulate form submission
     setTimeout(() => {
-      showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
+      showNotification(t.contact.notifications.success, 'success');
       setFormData({ name: '', email: '', message: '' });
       setIsSubmitting(false);
     }, 2000);
@@ -110,34 +114,34 @@ const Contact = () => {
     <>
       <section className="contact section-animate" id="contact">
         <div className="container">
-          <h2 className="section-title">Get In Touch</h2>
+          <h2 className="section-title">{t.contact.title}</h2>
           <div className="contact-content">
             <div className="contact-info">
               <div className="contact-item">
                 <i className="fa-solid fa-envelope"></i>
                 <div>
-                  <h3>Email</h3>
+                  <h3>{t.contact.emailLabel}</h3>
                   <p>phamletruong2001@gmail.com</p>
                 </div>
               </div>
               <div className="contact-item">
                 <i className="fa-solid fa-map-marker-alt"></i>
                 <div>
-                  <h3>Location</h3>
-                  <p>Nhan Chinh, Thanh Xuan, Ha Noi</p>
+                  <h3>{t.contact.contactInfo}</h3>
+                  <p>{t.contact.location}</p>
                 </div>
               </div>
               <div className="contact-item">
                 <i className="fa-solid fa-phone"></i>
                 <div>
-                  <h3>Phone</h3>
+                  <h3>{t.contact.phoneLabel}</h3>
                   <p>0823 369 604</p>
                 </div>
               </div>
               <div className="contact-item">
                 <i className="fa-brands fa-github"></i>
                 <div>
-                  <h3>GitHub</h3>
+                  <h3>{t.contact.githubLabel}</h3>
                   <p>github.com/okean8901</p>
                 </div>
               </div>
@@ -151,7 +155,7 @@ const Contact = () => {
                   onChange={handleInputChange}
                   required 
                 />
-                <label>Your Name</label>
+                <label>{t.contact.name}</label>
               </div>
               <div className="form-group">
                 <input 
@@ -161,7 +165,7 @@ const Contact = () => {
                   onChange={handleInputChange}
                   required 
                 />
-                <label>Your Email</label>
+                <label>{t.contact.email}</label>
               </div>
               <div className="form-group">
                 <textarea 
@@ -171,11 +175,11 @@ const Contact = () => {
                   required 
                   rows="5"
                 ></textarea>
-                <label>Your Message</label>
+                <label>{t.contact.message}</label>
               </div>
               <button type="submit" className="submit-btn" disabled={isSubmitting}>
                 <i className={`fa-solid ${isSubmitting ? 'fa-spinner fa-spin' : 'fa-paper-plane'}`}></i>
-                {isSubmitting ? 'Sending...' : 'Send Message'}
+                {isSubmitting ? t.contact.sending : t.contact.sendMessage}
               </button>
             </form>
           </div>
@@ -184,9 +188,9 @@ const Contact = () => {
 
       <section className="download-cv-section section-animate">
         <div className="container">
-          <h2 className="section-title">Download My CV</h2>
+          <h2 className="section-title">{t.contact.downloadCV}</h2>
           <p className="section-subtitle">
-            Get a detailed overview of my experience and skills
+            {t.contact.downloadCVSubtitle}
           </p>
           <a
             href="/PhamLeTruong_Resume.pdf"
@@ -194,7 +198,7 @@ const Contact = () => {
             className="download-cv-btn large"
           >
             <i className="fa-solid fa-download"></i>
-            Download CV
+            {t.contact.downloadCVBtn}
           </a>
         </div>
       </section>

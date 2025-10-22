@@ -1,25 +1,29 @@
 import React, { useState } from 'react';
+import { useLanguage } from '../contexts/LanguageContext';
+import { translations } from '../translations/translations';
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('all');
+  const { language } = useLanguage();
+  const t = translations[language];
 
   const projects = [
     {
       id: 1,
-      title: 'Personal Portfolio Website',
-      description: 'Modern, responsive portfolio website showcasing professional experience and projects',
+      title: t.projects.projects.portfolio.title,
+      description: t.projects.projects.portfolio.description,
       image: '/IMG/portfolio.png',
       category: 'web portfolio',
       github: 'https://github.com/okean8901/OkeanPortfolio',
       live: '#',
       duration: 'Dec 2024 – Jan 2025',
       role: 'Frontend Developer',
-      tags: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design', 'Particles.js', 'FontAwesome']
+      tags: ['React', 'JavaScript (ES6+)', 'CSS3', 'HTML5', 'Responsive Design', 'Particles.js', 'FontAwesome', 'Context API']
     },
     {
       id: 2,
-      title: 'AI CV Analysis System',
-      description: 'Intelligent Resume Analysis Platform with Azure AI Services integration',
+      title: t.projects.projects.aiCV.title,
+      description: t.projects.projects.aiCV.description,
       image: '/IMG/AI_CV.png',
       category: 'ai web',
       github: 'https://github.com/okean8901/AI_CV_WEB.git',
@@ -30,8 +34,8 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: 'Okean Mobile – E-commerce Platform',
-      description: 'Comprehensive e-commerce solution with AI-powered features and secure payment integration',
+      title: t.projects.projects.ecommerce.title,
+      description: t.projects.projects.ecommerce.description,
       image: '/IMG/okeanmobile.png',
       category: 'ecommerce web',
       github: 'https://github.com/okean8901/OkeanMobile_ASP.NET_MVC.git',
@@ -42,8 +46,8 @@ const Projects = () => {
     },
     {
       id: 4,
-      title: 'Student Information Management System',
-      description: 'Comprehensive system for managing student data, courses, enrollments, and user authentication with role-based access control',
+      title: t.projects.projects.sims.title,
+      description: t.projects.projects.sims.description,
       image: '/IMG/apdp.png',
       category: 'web',
       github: 'https://github.com/okean8901/SIMS_ASP.NET_MVC.git',
@@ -54,8 +58,8 @@ const Projects = () => {
     },
     {
       id: 5,
-      title: 'Okean AnimeMovie',
-      description: 'ASP.NET Core MVC anime viewing web application: browse anime, watch episodes, comment, favorite, trend and manage content. Optimized performance, clear UI and easy to extend.',
+      title: t.projects.projects.anime.title,
+      description: t.projects.projects.anime.description,
       image: '/IMG/okeananime.png',
       category: 'web',
       github: 'https://github.com/okean8901/OkeanAnime_MovieWeb.git',
@@ -67,11 +71,11 @@ const Projects = () => {
   ];
 
   const filters = [
-    { key: 'all', label: 'All' },
-    { key: 'web', label: 'Web' },
-    { key: 'portfolio', label: 'Portfolio' },
-    { key: 'ai', label: 'AI' },
-    { key: 'ecommerce', label: 'E-commerce' }
+    { key: 'all', label: t.projects.filters.all },
+    { key: 'web', label: t.projects.filters.web },
+    { key: 'portfolio', label: t.projects.filters.portfolio },
+    { key: 'ai', label: t.projects.filters.ai },
+    { key: 'ecommerce', label: t.projects.filters.ecommerce }
   ];
 
   const filteredProjects = projects.filter(project => {
@@ -86,7 +90,7 @@ const Projects = () => {
   return (
     <section className="projects section-animate" id="projects">
       <div className="container">
-        <h2 className="section-title">My Projects</h2>
+        <h2 className="section-title">{t.projects.title}</h2>
         <div className="project-filters">
           {filters.map(filter => (
             <button
@@ -132,8 +136,8 @@ const Projects = () => {
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
                 <div className="project-details">
-                  <p><strong>Duration:</strong> {project.duration}</p>
-                  <p><strong>Role:</strong> {project.role}</p>
+                  <p><strong>{t.projects.projectDetails.duration}:</strong> {project.duration}</p>
+                  <p><strong>{t.projects.projectDetails.role}:</strong> {project.role}</p>
                 </div>
                 <div className="project-tags">
                   {project.tags.map((tag, index) => (

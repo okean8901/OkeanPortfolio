@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import SocialLinks from './components/SocialLinks';
 import ScrollProgress from './components/ScrollProgress';
 import ParticlesBackground from './components/ParticlesBackground';
+import { LanguageProvider } from './contexts/LanguageContext';
 
 function App() {
   useEffect(() => {
@@ -48,20 +49,22 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <ParticlesBackground />
-      <ScrollProgress />
-      <Header />
-      <SocialLinks />
-      <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <LanguageProvider>
+      <div className="App">
+        <ParticlesBackground />
+        <ScrollProgress />
+        <Header />
+        <SocialLinks />
+        <main>
+          <Hero />
+          <About />
+          <Skills />
+          <Projects />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    </LanguageProvider>
   );
 }
 
