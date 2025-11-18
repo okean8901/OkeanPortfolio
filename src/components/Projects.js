@@ -67,6 +67,18 @@ const Projects = () => {
       duration: '2025',
       role: 'Full Stack Developer',
       tags: ['ASP.NET Core 8', 'MVC', 'Entity Framework Core', 'SQL Server', 'Identity', 'JWT', 'Bootstrap 5', 'jQuery']
+    },
+    {
+      id: 6,
+      title: t.projects.projects.okeanchat.title,
+      description: t.projects.projects.okeanchat.description,
+      image: '/IMG/okeanchat.png',
+      category: 'chat web',
+      github: 'https://github.com/okean8901/OkeanChat.git',
+      live: null,
+      duration: '2025',
+      role: 'Full Stack Developer',
+      tags: ['ASP.NET Core 8', 'SignalR', 'WebRTC', 'Entity Framework Core', 'SQL Server', 'Real-time Communication', 'P2P Calls', 'JavaScript']
     }
   ];
 
@@ -75,7 +87,8 @@ const Projects = () => {
     { key: 'web', label: t.projects.filters.web },
     { key: 'portfolio', label: t.projects.filters.portfolio },
     { key: 'ai', label: t.projects.filters.ai },
-    { key: 'ecommerce', label: t.projects.filters.ecommerce }
+    { key: 'ecommerce', label: t.projects.filters.ecommerce },
+    { key: 'chat', label: t.projects.filters.chat }
   ];
 
   const filteredProjects = projects.filter(project => {

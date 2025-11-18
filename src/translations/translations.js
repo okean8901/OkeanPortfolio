@@ -68,7 +68,8 @@ export const translations = {
         web: 'Web',
         portfolio: 'Portfolio',
         ai: 'AI',
-        ecommerce: 'E-commerce'
+        ecommerce: 'E-commerce',
+        chat: 'Chat & Real-time'
       },
       projectDetails: {
         duration: 'Duration',
@@ -93,7 +94,12 @@ export const translations = {
         },
         anime: {
           title: 'Okean AnimeMovie',
-          description: 'Anime streaming web application built with ASP.NET Core MVC. Features: browse anime, watch episodes, comments, favorites, trending content, and admin management.'
+          description: 'ASP.NET Core MVC anime viewing web application: browse anime, watch episodes, comment, favorite, trend and manage content. Optimized performance, clear UI and easy to extend.'
+        },
+        okeanchat: {
+          title: 'OkeanChat – Real-time Chat & Video Call',
+          description: 'Real-time chat and video call application built with ASP.NET Core 8 and SignalR, supporting public/private messaging, friend management, P2P and group calls via WebRTC'
+
         }
       }
     },
@@ -108,7 +114,7 @@ export const translations = {
       sendMessage: 'Send Message',
       sending: 'Sending...',
       contactInfo: 'Contact Information',
-      location: 'Ho Chi Minh City, Vietnam',
+      location: 'Ha Noi City, Vietnam',
       emailLabel: 'Email',
       phoneLabel: 'Phone',
       githubLabel: 'GitHub',
@@ -205,7 +211,8 @@ export const translations = {
         web: 'Web',
         portfolio: 'Portfolio',
         ai: 'AI',
-        ecommerce: 'Thương mại điện tử'
+        ecommerce: 'Thương mại điện tử',
+        chat: 'Chat & Thời gian Thực'
       },
       projectDetails: {
         duration: 'Thời gian',
@@ -230,7 +237,12 @@ export const translations = {
         },
         anime: {
           title: 'Okean AnimeMovie',
-          description: 'Ứng dụng web xem anime xây dựng bằng ASP.NET Core MVC. Tính năng: duyệt anime, xem tập, bình luận, yêu thích, nội dung trending và quản lý admin.'
+          description: 'Ứng dụng web xem anime ASP.NET Core MVC: duyệt anime, xem tập, bình luận, yêu thích, xu hướng và quản lý nội dung. Hiệu suất tối ưu, giao diện rõ ràng và dễ mở rộng.'
+        },
+        okeanchat: {
+          title: 'OkeanChat – Chat & Video Call Thời gian Thực',
+          description: 'Ứng dụng chat và video call thời gian thực xây dựng bằng ASP.NET Core 8 và SignalR, hỗ trợ tin nhắn công khai/riêng tư, quản lý bạn bè, cuộc gọi P2P và nhóm qua WebRTC'
+
         }
       }
     },
@@ -245,7 +257,7 @@ export const translations = {
       sendMessage: 'Gửi tin nhắn',
       sending: 'Đang gửi...',
       contactInfo: 'Thông tin Liên hệ',
-      location: 'Thành phố Hồ Chí Minh, Việt Nam',
+      location: 'Thành phố Hà Nội, Việt Nam',
       emailLabel: 'Email',
       phoneLabel: 'Điện thoại',
       githubLabel: 'GitHub',
