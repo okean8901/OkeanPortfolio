@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import CV from './components/CV';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import SocialLinks from './components/SocialLinks';
@@ -60,6 +61,7 @@ function App() {
           <About />
           <Skills />
           <Projects />
+          <CV />
           <Contact />
         </main>
         <Footer />

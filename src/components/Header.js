@@ -55,6 +55,7 @@ const Header = () => {
               <li><a href="#about" className="nav-link" onClick={(e) => smoothScroll(e, '#about')}>{t.nav.about}</a></li>
               <li><a href="#skills" className="nav-link" onClick={(e) => smoothScroll(e, '#skills')}>{t.nav.skills}</a></li>
               <li><a href="#projects" className="nav-link" onClick={(e) => smoothScroll(e, '#projects')}>{t.nav.projects}</a></li>
+              <li><a href="#cv" className="nav-link" onClick={(e) => smoothScroll(e, '#cv')}>CV</a></li>
               <li><a href="#contact" className="nav-link" onClick={(e) => smoothScroll(e, '#contact')}>{t.nav.contact}</a></li>
             </ul>
           </nav>

@@ -104,6 +104,12 @@ export const translations = {
       }
     },
     
+    // CV Section
+    cv: {
+      title: 'My Resume',
+      subtitle: 'View my detailed resume'
+    },
+    
     // Contact Section
     contact: {
       title: 'Get In Touch',
@@ -245,6 +251,12 @@ export const translations = {
 
         }
       }
+    },
+    
+    // CV Section
+    cv: {
+      title: 'Hồ sơ của tôi',
+      subtitle: 'Xem CV chi tiết của mình'
     },
     
     // Contact Section

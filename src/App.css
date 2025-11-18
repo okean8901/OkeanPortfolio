@@ -728,6 +728,42 @@ body {
     border: 1px solid var(--border-color);
 }
 
+/* CV Section */
+.cv {
+    padding: 100px 0;
+    background: var(--dark-bg);
+    position: relative;
+    z-index: 1;
+}
+
+.cv-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.cv-image {
+    width: 100%;
+    max-width: 533px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    border: 2px solid var(--primary-color);
+    box-shadow: var(--shadow-hover);
+    transition: var(--transition);
+}
+
+.cv-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 40px rgba(3, 233, 244, 0.3);
+}
+
+.cv-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* Contact Section */
 .contact {
     padding: 100px 0;
