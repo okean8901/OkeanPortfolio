@@ -13,17 +13,18 @@ export const translations = {
     // Hero Section
     hero: {
       title: 'Pham Le Truong',
-      subtitle: 'Software Engineer',
-      description: 'Hey there! I\'m a Software Engineer who loves building things with C#, ASP.NET Core MVC, and SQL Server. I enjoy creating web apps that are secure, fast, and smart - whether it\'s handling user management, building APIs, or adding some AI magic.',
+      subtitle: 'Software Tester | Quality Assurance | Quality Control',
+      description: 'Passionate QA professional dedicated to ensuring software excellence through comprehensive testing, quality assurance processes, and continuous improvement. I specialize in manual and automated testing, defect identification, and delivering high-quality products that meet user expectations.',
       viewProjects: 'View Projects',
-      getInTouch: 'Get In Touch'
+      getInTouch: 'Get In Touch',
+      roles: ['Software Tester', 'Quality Assurance', 'Quality Control']
     },
     
     // About Section
     about: {
       title: 'About Me',
-      description1: 'I\'m currently a Software Engineering Intern, and I\'m really into C#, ASP.NET Core MVC, and SQL Server. What gets me excited is building stuff that actually works and solves real problems - whether that\'s making sure user data is safe, creating APIs that make sense, or adding AI features that are actually useful.',
-      description2: 'Right now I\'m studying Software Engineering at BTEC FPT British College. I was pretty stoked to get the Academic Achievement Award for Fall Semester 2024 in Computing! When I\'m coding, I try to keep things clean and simple, and I always think about how people will actually use what I build.',
+      description1: 'I\'m a Quality Assurance professional with a passion for ensuring software excellence. I specialize in identifying defects, improving testing processes, and collaborating with development teams to deliver high-quality products. My focus is on comprehensive testing strategies, test automation, and maintaining rigorous quality standards.',
+      description2: 'Currently studying Software Engineering at BTEC FPT British College with hands-on experience in QA and testing methodologies. I received the Academic Achievement Award for Fall Semester 2024 in Computing! I believe in meticulous attention to detail, continuous learning, and building robust testing frameworks that ensure products meet user expectations.',
       education: 'Education',
       educationTitle: 'BTEC FPT British College – Software Engineering',
       educationPeriod: 'Mar 2023 – Present',
@@ -40,20 +41,44 @@ export const translations = {
       title: 'Technical Skills',
       subtitle: 'Here\'s what I work with',
       skillCategories: {
-        programming: 'Programming Languages & Frameworks',
+        testing: 'Manual Testing Methodologies',
+        techniques: 'Advanced Testing Techniques',
+        tools: 'QA Tools & Platforms',
+        database: 'Database & SQL',
         web: 'Web Technologies',
-        database: 'Databases',
-        tools: 'Development Tools',
-        ai: 'AI & Cloud Services',
         soft: 'Soft Skills'
       },
       skillDescriptions: {
-        programming: 'C#, .NET Framework, .NET Core, ASP.NET Core MVC',
-        web: 'HTML5, CSS3, JavaScript (ES6+), Bootstrap, Tailwind CSS',
-        database: 'Microsoft SQL Server, MySQL',
-        tools: 'Visual Studio, Git, GitHub, Entity Framework Core, LINQ',
-        ai: 'Azure AI Services, RESTful API Development, MVC Architecture',
-        soft: 'Problem-Solving, Team Collaboration, Time Management, Adaptability'
+        testing: 'Functional Testing, Regression Testing, Smoke Testing, Sanity Testing, UAT Preparation, Test Case Execution',
+        techniques: 'UI/UX Testing, Logic Testing, Exploratory Testing, Boundary Value Analysis, Equivalence Partitioning',
+        tools: 'Jira, Lark, Chrome DevTools, Firefox DevTools, Browser Testing, Test Documentation',
+        database: 'SQL Server, MySQL, SQL Query Writing, Database Testing, Data Validation',
+        web: 'HTML5, CSS3, JavaScript, API Testing, Performance Testing, Load Testing',
+        soft: 'Attention to Detail, Communication, Documentation, Time Management, Team Collaboration, Analytical Thinking'
+      }
+    },
+
+    // Testing & QA Section
+    testingQA: {
+      title: 'Manual Testing & QA Expertise',
+      subtitle: 'Specialized Skills in Quality Assurance & Manual Testing',
+      categories: {
+        stlc: 'Software Testing Life Cycle (STLC)',
+        testDesign: 'Test Case Design & Execution',
+        manualTesting: 'Manual Testing Types & Techniques',
+        bugManagement: 'Bug Management & Reporting',
+        tools: 'Testing Tools & Platforms',
+        testDataSQL: 'Test Data & SQL',
+        softSkills: 'QA Soft Skills'
+      },
+      details: {
+        stlc: 'Complete STLC Process | Requirements Analysis & Test Planning | Test Case Development | Test Execution | Defect Reporting | UAT Support',
+        testDesign: 'Test Case Design (Positive & Negative Scenarios) | Boundary Value Analysis | Equivalence Partitioning | Test Data Preparation | Test Execution Tracking',
+        manualTesting: 'Functional Testing | UI/UX Testing | Logic Testing | Regression Testing | Smoke Testing | Sanity Testing | Exploratory Testing | User Acceptance Testing (UAT)',
+        bugManagement: 'Bug Detection & Documentation (Clear Steps, Expected vs Actual Results) | Bug Severity & Priority Assessment | Bug Tracking & Status Updates | Root Cause Analysis | Dev Collaboration & Verification',
+        tools: 'Jira - Defect & Test Case Management | Lark - Team Communication & Collaboration | Chrome DevTools | Firefox DevTools | Test Case Documentation Tools',
+        testDataSQL: 'SQL Query Writing for Test Data Preparation | Database Testing & Validation | Data Integrity Verification | Direct Database Queries for Testing',
+        softSkills: 'Strong Logical & Analytical Thinking | Exceptional Attention to Detail | Excellent Communication & Collaboration | Proactive Learning Mindset | Problem-Solving Ability | Patience & Persistence | Independent Work Capability'
       }
     },
     
@@ -162,17 +187,18 @@ export const translations = {
     // Hero Section
     hero: {
       title: 'Phạm Lê Trường',
-      subtitle: 'Kỹ sư Phần mềm',
-      description: 'Xin chào! Mình là một kỹ sư phần mềm đam mê xây dựng các ứng dụng với C#, ASP.NET Core MVC và SQL Server. Mình thích tạo ra những web app an toàn, nhanh và thông minh - từ quản lý người dùng, xây dựng APIs đến tích hợp AI.',
+      subtitle: 'Software Tester | Quality Assurance | Quality Control',
+      description: 'Chuyên gia QA đam mê đảm bảo chất lượng phần mềm thông qua kiểm thử toàn diện, quy trình đảm bảo chất lượng và cải tiến liên tục. Mình chuyên về kiểm thử thủ công và tự động, xác định lỗi, và cung cấp sản phẩm chất lượng cao đáp ứng kỳ vọng của người dùng.',
       viewProjects: 'Xem Dự án',
-      getInTouch: 'Liên hệ'
+      getInTouch: 'Liên hệ',
+      roles: ['Software Tester', 'Quality Assurance', 'Quality Control']
     },
     
     // About Section
     about: {
       title: 'Giới thiệu',
-      description1: 'Hiện tại mình đang là Thực tập sinh Kỹ sư Phần mềm, và mình rất thích làm việc với C#, ASP.NET Core MVC và SQL Server. Điều khiến mình hào hứng là xây dựng những thứ thực sự hoạt động và giải quyết được vấn đề thực tế - từ việc đảm bảo dữ liệu người dùng an toàn, tạo APIs dễ sử dụng đến thêm các tính năng AI hữu ích.',
-      description2: 'Mình đang học Kỹ sư Phần mềm tại BTEC FPT British College. Mình khá vui khi nhận được Giải thưởng Thành tích Học tập cho Học kỳ Thu 2024 trong chuyên ngành Computing! Khi code, mình cố gắng giữ mọi thứ sạch sẽ và đơn giản, và luôn nghĩ về cách mọi người sẽ thực sự sử dụng những gì mình tạo ra.',
+      description1: 'Mình là chuyên gia Quality Assurance đam mê đảm bảo chất lượng phần mềm xuất sắc. Mình chuyên về xác định lỗi, cải tiến quy trình kiểm thử, và hợp tác với các nhóm phát triển để cung cấp sản phẩm chất lượng cao. Trọng tâm của mình là các chiến lược kiểm thử toàn diện, tự động hóa kiểm thử, và duy trì tiêu chuẩn chất lượng nghiêm ngặt.',
+      description2: 'Hiện đang học Kỹ sư Phần mềm tại BTEC FPT British College với kinh nghiệm thực tế về QA và các phương pháp kiểm thử. Mình vừa nhận được Giải thưởng Thành tích Học tập cho Học kỳ Thu 2024 trong chuyên ngành Computing! Mình tin vào sự chú ý đến chi tiết, học tập liên tục, và xây dựng các khung kiểm thử mạnh mẽ để đảm bảo sản phẩm đáp ứng kỳ vọng của người dùng.',
       education: 'Học vấn',
       educationTitle: 'BTEC FPT British College – Kỹ sư Phần mềm',
       educationPeriod: 'Tháng 3/2023 – Hiện tại',
@@ -189,20 +215,44 @@ export const translations = {
       title: 'Kỹ năng Kỹ thuật',
       subtitle: 'Đây là những gì mình thường dùng',
       skillCategories: {
-        programming: 'Ngôn ngữ Lập trình & Framework',
+        testing: 'Phương pháp Kiểm thử Thủ công',
+        techniques: 'Kỹ thuật Kiểm thử Nâng cao',
+        tools: 'Công cụ & Nền tảng QA',
+        database: 'Cơ sở Dữ liệu & SQL',
         web: 'Công nghệ Web',
-        database: 'Cơ sở Dữ liệu',
-        tools: 'Công cụ Phát triển',
-        ai: 'AI & Dịch vụ Cloud',
         soft: 'Kỹ năng Mềm'
       },
       skillDescriptions: {
-        programming: 'C#, .NET Framework, .NET Core, ASP.NET Core MVC',
-        web: 'HTML5, CSS3, JavaScript (ES6+), Bootstrap, Tailwind CSS',
-        database: 'Microsoft SQL Server, MySQL',
-        tools: 'Visual Studio, Git, GitHub, Entity Framework Core, LINQ',
-        ai: 'Azure AI Services, RESTful API Development, MVC Architecture',
-        soft: 'Giải quyết Vấn đề, Hợp tác Nhóm, Quản lý Thời gian, Thích ứng'
+        testing: 'Kiểm thử Chức năng, Kiểm thử Hồi quy, Kiểm thử Khói, Kiểm thử Vệ sinh, Chuẩn bị UAT, Thực thi Test Case',
+        techniques: 'Kiểm thử UI/UX, Kiểm thử Logic, Kiểm thử Khám phá, Phân tích Giá trị Biên, Phân hoạch Tương đương',
+        tools: 'Jira, Lark, Chrome DevTools, Firefox DevTools, Kiểm thử Trình duyệt, Tài liệu Kiểm thử',
+        database: 'SQL Server, MySQL, Viết Truy vấn SQL, Kiểm thử Cơ sở Dữ liệu, Xác thực Dữ liệu',
+        web: 'HTML5, CSS3, JavaScript, Kiểm thử API, Kiểm thử Hiệu suất, Kiểm thử Tải',
+        soft: 'Chú ý Chi tiết, Giao tiếp, Tài liệu hóa, Quản lý Thời gian, Hợp tác Nhóm, Tư duy Phân tích'
+      }
+    },
+
+    // Testing & QA Section
+    testingQA: {
+      title: 'Chuyên môn Kiểm thử Thủ công & QA',
+      subtitle: 'Kỹ năng chuyên sâu trong Đảm bảo Chất lượng & Kiểm thử Thủ công',
+      categories: {
+        stlc: 'Quy trình Kiểm thử Phần mềm (STLC)',
+        testDesign: 'Thiết kế & Thực thi Test Case',
+        manualTesting: 'Loại & Kỹ thuật Kiểm thử Thủ công',
+        bugManagement: 'Quản lý & Báo cáo Bug',
+        tools: 'Công cụ & Nền tảng Kiểm thử',
+        testDataSQL: 'Dữ liệu Kiểm thử & SQL',
+        softSkills: 'Kỹ năng Mềm QA'
+      },
+      details: {
+        stlc: 'Quy trình STLC Hoàn chỉnh | Phân tích Yêu cầu & Lập kế hoạch Kiểm thử | Phát triển Test Case | Thực thi Kiểm thử | Báo cáo Lỗi | Hỗ trợ UAT',
+        testDesign: 'Thiết kế Test Case (Kịch bản Dương & Âm) | Phân tích Giá trị Biên | Phân hoạch Tương đương | Chuẩn bị Dữ liệu Kiểm thử | Theo dõi Thực thi',
+        manualTesting: 'Kiểm thử Chức năng | Kiểm thử UI/UX | Kiểm thử Logic | Kiểm thử Hồi quy | Kiểm thử Khói | Kiểm thử Vệ sinh | Kiểm thử Khám phá | Kiểm thử Chấp nhận Người dùng (UAT)',
+        bugManagement: 'Phát hiện & Mô tả Bug Rõ ràng (Steps, Expected vs Actual Results) | Đánh giá Mức độ Nghiêm trọng & Ưu tiên | Theo dõi & Cập nhật Trạng thái Bug | Phân tích Nguyên nhân | Hợp tác Dev & Xác thực',
+        tools: 'Jira - Quản lý Lỗi & Test Case | Lark - Giao tiếp & Hợp tác Nhóm | Chrome DevTools | Firefox DevTools | Công cụ Tài liệu Hóa Test Case',
+        testDataSQL: 'Viết Truy vấn SQL để Chuẩn bị Dữ liệu Kiểm thử | Kiểm thử & Xác thực Cơ sở Dữ liệu | Xác thực Tính toàn vẹn Dữ liệu | Truy vấn Trực tiếp Cơ sở Dữ liệu để Kiểm thử',
+        softSkills: 'Tư duy Logic & Phân tích Mạnh | Chú ý Chi tiết Xuất sắc | Giao tiếp & Hợp tác Xuất sắc | Tinh thần Học hỏi Chủ động | Khả năng Giải quyết Vấn đề | Kiên nhẫn & Bền bỉ | Khả năng Làm việc Độc lập'
       }
     },
     

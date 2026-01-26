@@ -29,10 +29,28 @@ const Skills = () => {
 
   const skills = [
     {
-      icon: 'fa-solid fa-code',
-      title: t.skills.skillCategories.programming,
-      description: t.skills.skillDescriptions.programming,
+      icon: 'fa-solid fa-flask-vial',
+      title: t.skills.skillCategories.testing,
+      description: t.skills.skillDescriptions.testing,
+      level: 95
+    },
+    {
+      icon: 'fa-solid fa-magnifying-glass',
+      title: t.skills.skillCategories.techniques,
+      description: t.skills.skillDescriptions.techniques,
+      level: 92
+    },
+    {
+      icon: 'fa-solid fa-toolbox',
+      title: t.skills.skillCategories.tools,
+      description: t.skills.skillDescriptions.tools,
       level: 90
+    },
+    {
+      icon: 'fa-solid fa-database',
+      title: t.skills.skillCategories.database,
+      description: t.skills.skillDescriptions.database,
+      level: 88
     },
     {
       icon: 'fa-solid fa-globe',
@@ -41,28 +59,10 @@ const Skills = () => {
       level: 85
     },
     {
-      icon: 'fa-solid fa-database',
-      title: t.skills.skillCategories.database,
-      description: t.skills.skillDescriptions.database,
-      level: 80
-    },
-    {
-      icon: 'fa-solid fa-tools',
-      title: t.skills.skillCategories.tools,
-      description: t.skills.skillDescriptions.tools,
-      level: 85
-    },
-    {
-      icon: 'fa-solid fa-brain',
-      title: t.skills.skillCategories.ai,
-      description: t.skills.skillDescriptions.ai,
-      level: 75
-    },
-    {
       icon: 'fa-solid fa-users',
       title: t.skills.skillCategories.soft,
       description: t.skills.skillDescriptions.soft,
-      level: 90
+      level: 94
     }
   ];
 
