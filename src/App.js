@@ -6,6 +6,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import CV from './components/CV';
+import Certifications from './components/Certifications';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import SocialLinks from './components/SocialLinks';
@@ -60,6 +61,7 @@ function App() {
           <Hero />
           <About />
           <Skills />
+          <Certifications />
           <Projects />
           <CV />
           <Contact />

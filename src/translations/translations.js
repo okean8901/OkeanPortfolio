@@ -7,6 +7,7 @@ export const translations = {
       skills: 'Skills',
       projects: 'Projects',
       contact: 'Contact',
+      certifications: 'Certifications',
       downloadCV: 'Download CV'
     },
     
@@ -24,10 +25,10 @@ export const translations = {
     about: {
       title: 'About Me',
       description1: 'I\'m a Quality Assurance professional with a passion for ensuring software excellence. I specialize in identifying defects, improving testing processes, and collaborating with development teams to deliver high-quality products. My focus is on comprehensive testing strategies, test automation, and maintaining rigorous quality standards.',
-      description2: 'Currently studying Software Engineering at BTEC FPT British College with hands-on experience in QA and testing methodologies. I received the Academic Achievement Award for Fall Semester 2024 in Computing! I believe in meticulous attention to detail, continuous learning, and building robust testing frameworks that ensure products meet user expectations.',
+      description2: 'Software Engineering graduate from BTEC FPT British College with hands-on experience in QA and testing methodologies. I received the Academic Achievement Award for Fall Semester 2024 in Computing! I believe in meticulous attention to detail, continuous learning, and building robust testing frameworks that ensure products meet user expectations.',
       education: 'Education',
       educationTitle: 'BTEC FPT British College – Software Engineering',
-      educationPeriod: 'Mar 2023 – Present',
+      educationPeriod: 'Mar 2023 – Aug 2025',
       achievement: '🏆 Academic Achievement Award – Fall Semester 2024 (Computing major)',
       stats: {
         yearsExperience: 'Years Experience',
@@ -84,7 +85,7 @@ export const translations = {
     
     // Projects Section
     projects: {
-      title: 'My Projects',
+      title: 'Testing Projects',
       subtitle: 'Here are some things I\'ve been working on',
       viewProject: 'View Project',
       viewCode: 'View Code',
@@ -103,27 +104,27 @@ export const translations = {
       projects: {
         portfolio: {
           title: 'Personal Portfolio Website',
-          description: 'Portfolio website built with React. Features: multilingual support (English/Vietnamese), responsive design, interactive animations.'
+          description: 'QA Testing for React portfolio website. Tested: responsive design across devices, multilingual support (English/Vietnamese), interactive animations, cross-browser compatibility, and UI/UX functionality.'
         },
         aiCV: {
           title: 'AI CV Analysis System',
-          description: 'Resume analysis platform using Azure AI Services. Analyzes CVs and provides feedback for job applications.'
+          description: 'QA Testing for resume analysis platform using Azure AI Services. Tested: CV parsing accuracy, AI feedback validation, UI responsiveness, error handling, API integration, and edge cases with various CV formats.'
         },
         ecommerce: {
           title: 'Okean Mobile – E-commerce Platform',
-          description: 'E-commerce platform with AI-powered product recommendations and secure payment integration.'
+          description: 'QA Testing for e-commerce platform. Tested: AI-powered recommendations accuracy, product search and filtering, cart functionality, payment integration security, user workflows, and performance under load.'
         },
         sims: {
           title: 'Student Information Management System',
-          description: 'System for managing student data, courses, and enrollments. Includes role-based access control for students, teachers, and admins.'
+          description: 'QA Testing for student data management system. Tested: data integrity, role-based access control (students/teachers/admins), course enrollment workflows, CRUD operations, user permissions, and system security.'
         },
         anime: {
           title: 'Okean AnimeMovie',
-          description: 'ASP.NET Core MVC anime viewing web application: browse anime, watch episodes, comment, favorite, trend and manage content. Optimized performance, clear UI and easy to extend.'
+          description: 'QA Testing for ASP.NET Core MVC anime application. Tested: browsing functionality, video playback, comments system, favorite features, trend data accuracy, content management, UI clarity, and performance optimization.'
         },
         okeanchat: {
           title: 'OkeanChat – Real-time Chat & Video Call',
-          description: 'Real-time chat and video call application built with ASP.NET Core 8 and SignalR, supporting public/private messaging, friend management, P2P and group calls via WebRTC'
+          description: 'QA Testing for real-time chat application (ASP.NET Core 8 & SignalR). Tested: message delivery and latency, public/private messaging, friend management, P2P/group calls via WebRTC, connection stability, and audio/video quality.'
 
         }
       }
@@ -133,6 +134,28 @@ export const translations = {
     cv: {
       title: 'My Resume',
       subtitle: 'View my detailed resume'
+    },
+    
+    // Certifications Section
+    certifications: {
+      title: 'Certifications',
+      subtitle: 'Professional credentials and achievements',
+      certificates: {
+        googleAI: {
+          title: 'Google AI Essentials',
+          issuer: 'Google',
+          issued: 'Jan 2026',
+          credentialId: 'L28CCX2AYDJW',
+          link: 'https://coursera.org/share/8af8e0dff5f2f813c1d3686be4fdb4f6'
+        },
+        istqb: {
+          title: 'ISTQB® Certified Tester - Foundation Level - 2025',
+          issuer: 'Udemy',
+          issued: 'Jan 2026',
+          credentialId: 'UC-5b679ca1-ffb4-4557-aa90-70510c743322',
+          link: 'https://www.udemy.com/certificate/UC-5b679ca1-ff1b-4557-aa90-70510c743322/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com'
+        }
+      }
     },
     
     // Contact Section
@@ -181,6 +204,7 @@ export const translations = {
       skills: 'Kỹ năng',
       projects: 'Dự án',
       contact: 'Liên hệ',
+      certifications: 'Chứng chỉ',
       downloadCV: 'Tải CV'
     },
     
@@ -198,10 +222,10 @@ export const translations = {
     about: {
       title: 'Giới thiệu',
       description1: 'Mình là chuyên gia Quality Assurance đam mê đảm bảo chất lượng phần mềm xuất sắc. Mình chuyên về xác định lỗi, cải tiến quy trình kiểm thử, và hợp tác với các nhóm phát triển để cung cấp sản phẩm chất lượng cao. Trọng tâm của mình là các chiến lược kiểm thử toàn diện, tự động hóa kiểm thử, và duy trì tiêu chuẩn chất lượng nghiêm ngặt.',
-      description2: 'Hiện đang học Kỹ sư Phần mềm tại BTEC FPT British College với kinh nghiệm thực tế về QA và các phương pháp kiểm thử. Mình vừa nhận được Giải thưởng Thành tích Học tập cho Học kỳ Thu 2024 trong chuyên ngành Computing! Mình tin vào sự chú ý đến chi tiết, học tập liên tục, và xây dựng các khung kiểm thử mạnh mẽ để đảm bảo sản phẩm đáp ứng kỳ vọng của người dùng.',
+      description2: 'Cử nhân Kỹ sư Phần mềm từ BTEC FPT British College với kinh nghiệm thực tế về QA và các phương pháp kiểm thử. Mình vừa nhận được Giải thưởng Thành tích Học tập cho Học kỳ Thu 2024 trong chuyên ngành Computing! Mình tin vào sự chú ý đến chi tiết, học tập liên tục, và xây dựng các khung kiểm thử mạnh mẽ để đảm bảo sản phẩm đáp ứng kỳ vọng của người dùng.',
       education: 'Học vấn',
       educationTitle: 'BTEC FPT British College – Kỹ sư Phần mềm',
-      educationPeriod: 'Tháng 3/2023 – Hiện tại',
+      educationPeriod: 'Tháng 3/2023 – Tháng 8/2025',
       achievement: '🏆 Giải thưởng Thành tích Học tập – Học kỳ Thu 2024 (Chuyên ngành Computing)',
       stats: {
         yearsExperience: 'Năm Kinh nghiệm',
@@ -258,7 +282,7 @@ export const translations = {
     
     // Projects Section
     projects: {
-      title: 'Dự án của tôi',
+      title: 'Dự án Kiểm thử',
       subtitle: 'Đây là một số thứ mình đã làm gần đây',
       viewProject: 'Xem Dự án',
       viewCode: 'Xem Mã nguồn',
@@ -277,27 +301,27 @@ export const translations = {
       projects: {
         portfolio: {
           title: 'Website Portfolio Cá nhân',
-          description: 'Website portfolio xây dựng bằng React. Tính năng: hỗ trợ đa ngôn ngữ (Tiếng Anh/Tiếng Việt), thiết kế responsive, hiệu ứng tương tác.'
+          description: 'Kiểm thử QA cho website portfolio React. Kiểm thử: thiết kế responsive trên các thiết bị, hỗ trợ đa ngôn ngữ (Tiếng Anh/Tiếng Việt), hiệu ứng tương tác, tương thích giữa các trình duyệt.'
         },
         aiCV: {
           title: 'Hệ thống Phân tích CV bằng AI',
-          description: 'Nền tảng phân tích CV sử dụng Azure AI Services. Phân tích CV và đưa ra phản hồi cho việc ứng tuyển.'
+          description: 'Kiểm thử QA cho nền tảng phân tích CV sử dụng Azure AI Services. Kiểm thử: độ chính xác của phân tích CV, xác thực phản hồi AI, đặc tính giao diện, xử lý lỗi, tích hợp API.'
         },
         ecommerce: {
           title: 'Okean Mobile – Nền tảng Thương mại điện tử',
-          description: 'Nền tảng thương mại điện tử với tính năng gợi ý sản phẩm bằng AI và tích hợp thanh toán bảo mật.'
+          description: 'Kiểm thử QA cho nền tảng thương mại điện tử. Kiểm thử: độ chính xác của gợi ý sản phẩm AI, tìm kiếm và lọc sản phẩm, chức năng giỏ hàng, bảo mật thanh toán, quy trình người dùng.'
         },
         sims: {
           title: 'Hệ thống Quản lý Thông tin Sinh viên',
-          description: 'Hệ thống quản lý dữ liệu sinh viên, khóa học và đăng ký. Có kiểm soát truy cập dựa trên vai trò cho sinh viên, giáo viên và admin.'
+          description: 'Kiểm thử QA cho hệ thống quản lý dữ liệu sinh viên. Kiểm thử: tính toàn vẹn dữ liệu, kiểm soát truy cập theo vai trò (sinh viên/giáo viên/admin), quy trình đăng ký khóa học.'
         },
         anime: {
           title: 'Okean AnimeMovie',
-          description: 'Ứng dụng web xem anime ASP.NET Core MVC: duyệt anime, xem tập, bình luận, yêu thích, xu hướng và quản lý nội dung. Hiệu suất tối ưu, giao diện rõ ràng và dễ mở rộng.'
+          description: 'Kiểm thử QA cho ứng dụng xem anime ASP.NET Core MVC. Kiểm thử: chức năng duyệt, phát video, hệ thống bình luận, yêu thích, dữ liệu xu hướng, quản lý nội dung.'
         },
         okeanchat: {
           title: 'OkeanChat – Chat & Video Call Thời gian Thực',
-          description: 'Ứng dụng chat và video call thời gian thực xây dựng bằng ASP.NET Core 8 và SignalR, hỗ trợ tin nhắn công khai/riêng tư, quản lý bạn bè, cuộc gọi P2P và nhóm qua WebRTC'
+          description: 'Kiểm thử QA cho ứng dụng chat thời gian thực (ASP.NET Core 8 & SignalR). Kiểm thử: gửi/nhận tin nhắn, tin nhắn công khai/riêng tư, quản lý bạn bè, cuộc gọi P2P/nhóm, ổn định kết nối.'
 
         }
       }
@@ -307,6 +331,28 @@ export const translations = {
     cv: {
       title: 'Hồ sơ của tôi',
       subtitle: 'Xem CV chi tiết của mình'
+    },
+    
+    // Certifications Section
+    certifications: {
+      title: 'Chứng chị',
+      subtitle: 'Các chứng chị và thành tích chuyên nghiệp',
+      certificates: {
+        googleAI: {
+          title: 'Google AI Essentials',
+          issuer: 'Google',
+          issued: 'Tháng 1/2026',
+          credentialId: 'L28CCX2AYDJW',
+          link: 'https://coursera.org/share/8af8e0dff5f2f813c1d3686be4fdb4f6'
+        },
+        istqb: {
+          title: 'ISTQB® Certified Tester - Foundation Level - 2025',
+          issuer: 'Udemy',
+          issued: 'Tháng 1/2026',
+          credentialId: 'UC-5b679ca1-ffb4-4557-aa90-70510c743322',
+          link: 'https://www.udemy.com/certificate/UC-5b679ca1-ff1b-4557-aa90-70510c743322/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com'
+        }
+      }
     },
     
     // Contact Section
