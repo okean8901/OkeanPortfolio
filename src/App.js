@@ -25,13 +25,13 @@ function App() {
     // Add scroll animation effect
     const animateOnScroll = () => {
       const sections = document.querySelectorAll('.section-animate');
-      
+
       sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.offsetHeight;
         const windowHeight = window.innerHeight;
         const scrollTop = window.pageYOffset;
-        
+
         if (scrollTop + windowHeight > sectionTop + sectionHeight * 0.3) {
           section.classList.add('animate');
         }

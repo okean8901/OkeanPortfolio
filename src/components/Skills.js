@@ -9,7 +9,7 @@ const Skills = () => {
   useEffect(() => {
     const animateSkills = () => {
       const skillCards = document.querySelectorAll('.skill-card');
-      
+
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
@@ -79,8 +79,8 @@ const Skills = () => {
               <h3>{skill.title}</h3>
               <p>{skill.description}</p>
               <div className="skill-level">
-                <div 
-                  className="skill-progress" 
+                <div
+                  className="skill-progress"
                   style={{ width: `${skill.level}%` }}
                 ></div>
               </div>

@@ -18,12 +18,12 @@ const Hero = () => {
   useEffect(() => {
     let timeoutIds = [];
     let typeTimeoutIds = [];
-    
+
     const typeWriter = (element, text, speed = 50) => {
       return new Promise((resolve) => {
         let i = 0;
         element.innerHTML = '';
-        
+
         const type = () => {
           if (i < text.length) {
             element.innerHTML += text.charAt(i);
@@ -34,7 +34,7 @@ const Hero = () => {
             resolve();
           }
         };
-        
+
         type();
       });
     };
@@ -46,13 +46,13 @@ const Hero = () => {
           for (let i = 0; i < t.hero.roles.length; i++) {
             // Type the role
             await typeWriter(rolesRef.current, t.hero.roles[i], 50);
-            
+
             // Wait before deleting
             await new Promise(resolve => {
               const timeoutId = setTimeout(resolve, 2000);
               timeoutIds.push(timeoutId);
             });
-            
+
             // Delete the text
             await new Promise(resolve => {
               let deleteCount = t.hero.roles[i].length;

@@ -335,8 +335,8 @@ export const translations = {
     
     // Certifications Section
     certifications: {
-      title: 'Chứng chị',
-      subtitle: 'Các chứng chị và thành tích chuyên nghiệp',
+      title: 'Chứng chỉ',
+      subtitle: 'Các chứng chỉ và thành tích chuyên nghiệp',
       certificates: {
         googleAI: {
           title: 'Google AI Essentials',
