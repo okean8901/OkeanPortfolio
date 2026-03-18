@@ -26,6 +26,11 @@ const SocialLinks = () => {
       href: 'https://github.com/okean8901',
       icon: 'fa-brands fa-github',
       label: 'GitHub'
+    },
+    {
+      href: 'https://www.linkedin.com/in/letruong2001/',
+      icon: 'fa-brands fa-linkedin',
+      label: 'LinkedIn'
     }
   ];
 

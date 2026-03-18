@@ -5,6 +5,7 @@ export const translations = {
       home: 'Home',
       about: 'About',
       skills: 'Skills',
+      experience: 'Experience',
       projects: 'Projects',
       contact: 'Contact',
       certifications: 'Certifications',
@@ -130,6 +131,63 @@ export const translations = {
       }
     },
     
+    // Experience Section
+    experience: {
+      title: 'Experience',
+      subtitle: 'My professional journey in Quality Assurance',
+      responsibilitiesLabel: 'Responsibilities',
+      skillsLabel: 'Skills & Tools',
+      jobs: [
+        {
+          position: 'QA Tester',
+          company: 'Sabo Game',
+          period: 'Jan 2026 – Present',
+          type: 'On-site',
+          description: 'Performing gameplay, UI/UX and feature testing in games',
+          responsibilities: [
+            'Design and execute test cases for main features: character systems, maps, NPCs, events and in-game activities',
+            'Build and perform Smoke Testing for each build to ensure core functionalities work stably',
+            'Perform Functional Testing and Exploratory Testing to identify bugs and potential issues',
+            'Detect and report bugs with complete information: steps to reproduce, expected/actual results, severity, priority',
+            'Collaborate with developers to confirm bugs, perform re-tests and verify after fixes',
+            'Perform Regression Testing after each bug fix or with new builds',
+            'Check and identify gameplay logic errors (wrong join conditions, system errors, UI issues)',
+            'Ensure build quality before transitioning to next testing phases'
+          ],
+          skills: [
+            'Manual Testing',
+            'Test Case Design & Bug Reporting',
+            'Smoke Testing, Functional Testing, Regression Testing, Exploratory Testing',
+            'Lark (work management, internal communication, bug tracking)',
+            'Excel / Google Sheet (test case management, bug lists)'
+          ]
+        },
+        {
+          position: 'Tester / QA – Software Deployment',
+          company: 'VIMASS',
+          period: 'Aug 2025 – Jan 2026',
+          type: 'Full-time',
+          description: 'Participated in testing and deploying payment, education and public service systems in real-world environments',
+          responsibilities: [
+            'Perform Functional Testing, Usability Testing, and User Acceptance Testing (UAT)',
+            'Record, categorize and report errors that arise',
+            'Perform re-testing and Regression Testing after bug fixes',
+            'Collaborate with dev team to ensure system quality',
+            'Support user guidance and issue handling during real deployment',
+            'Collect feedback for product improvement',
+            'Develop progress and quality system reports'
+          ],
+          skills: [
+            'Manual Testing',
+            'Test Case Design & Bug Reporting',
+            'UAT, Regression Testing',
+            'Excel / Google Sheet',
+            'Customer Communication & Deployment Support'
+          ]
+        }
+      ]
+    },
+    
     // CV Section
     cv: {
       title: 'My Resume',
@@ -146,7 +204,21 @@ export const translations = {
           issuer: 'Google',
           issued: 'Jan 2026',
           credentialId: 'L28CCX2AYDJW',
-          link: 'https://coursera.org/share/8af8e0dff5f2f813c1d3686be4fdb4f6'
+          link: 'https://www.credly.com/badges/6204ad2d-4524-4f34-b659-76ee591b87b1/linked_in_profile'
+        },
+        googlePromptingEssentials: {
+          title: 'Google Prompting Essentials',
+          issuer: 'Coursera',
+          issued: 'Mar 2026',
+          credentialId: 'DNWZJ58AEQ4Y',
+          link: 'https://www.credly.com/badges/74621970-8cfc-4f66-b4a5-7ea8c1c020da/linked_in_profile'
+        },
+        googleProjectManagement: {
+          title: 'Google Project Management Professional Certificate (v.3)',
+          issuer: 'Coursera',
+          issued: 'Mar 2026',
+          credentialId: 'R5B4L0UEXRYY',
+          link: 'https://www.credly.com/badges/bada0e4b-4f8d-46fe-8fca-9d34c971c95e/linked_in_profile'
         },
         istqb: {
           title: 'ISTQB® Certified Tester - Foundation Level - 2025',
@@ -154,6 +226,20 @@ export const translations = {
           issued: 'Jan 2026',
           credentialId: 'UC-5b679ca1-ffb4-4557-aa90-70510c743322',
           link: 'https://www.udemy.com/certificate/UC-5b679ca1-ff1b-4557-aa90-70510c743322/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com'
+        },
+        awsSysOps: {
+          title: 'AWS Certified SysOps Administrator Associate Hands-On + Exam',
+          issuer: 'Udemy',
+          issued: 'Feb 2026',
+          credentialId: 'UC-a9b83dca-d838-42c0-9251-faca2e6fd445',
+          link: 'https://www.udemy.com/certificate/UC-a9b83dca-d838-42c0-9251-faca2e6fd445/'
+        },
+        eksBootcamp: {
+          title: 'Ultimate EKS Bootcamp by School of Devops',
+          issuer: 'Udemy',
+          issued: 'Feb 2026',
+          credentialId: 'UC-83307adf-38e5-48c6-a919-25b7a180831c',
+          link: 'https://ude.my/UC-83307adf-38e5-48c6-a919-25b7a180831c'
         }
       }
     },
@@ -202,6 +288,7 @@ export const translations = {
       home: 'Trang chủ',
       about: 'Giới thiệu',
       skills: 'Kỹ năng',
+      experience: 'Kinh nghiệm',
       projects: 'Dự án',
       contact: 'Liên hệ',
       certifications: 'Chứng chỉ',
@@ -327,6 +414,63 @@ export const translations = {
       }
     },
     
+    // Experience Section
+    experience: {
+      title: 'Kinh nghiệm làm việc',
+      subtitle: '',
+      responsibilitiesLabel: 'Nhiệm vụ',
+      skillsLabel: 'Kỹ năng & Công cụ',
+      jobs: [
+        {
+          position: 'QA Tester',
+          company: 'Sabo Game',
+          period: 'Tháng 1/2026 – Hiện tại',
+          type: 'Tại văn phòng',
+          description: '',
+          responsibilities: [
+            'Thiết kế và thực thi test case cho các chức năng chính: hệ thống nhân vật, map, NPC, event và hoạt động trong game',
+            'Xây dựng và thực hiện Smoke Testing cho mỗi bản build nhằm đảm bảo các chức năng cốt lõi hoạt động ổn định',
+            'Thực hiện Functional Testing và Exploratory Testing để phát hiện bug và các lỗi tiềm ẩn',
+            'Phát hiện và báo cáo bug với đầy đủ thông tin: steps to reproduce, expected/actual result, severity, priority',
+            'Phối hợp với developer để xác nhận bug, thực hiện re-test và verify sau khi fix',
+            'Thực hiện Regression Testing sau mỗi lần fix bug hoặc khi có build mới',
+            'Kiểm tra và phát hiện các lỗi logic gameplay (sai điều kiện tham gia, lỗi hệ thống, UI)',
+            'Đảm bảo chất lượng build trước khi chuyển sang các giai đoạn test tiếp theo'
+          ],
+          skills: [
+            'Manual Testing',
+            'Test Case Design & Bug Reporting',
+            'Smoke Testing, Functional Testing, Regression Testing, Exploratory Testing',
+            'Lark (quản lý công việc, trao đổi nội bộ, theo dõi bug)',
+            'Excel / Google Sheet (quản lý test case, bug list)'
+          ]
+        },
+        {
+          position: 'Tester / QA – Software Deployment',
+          company: 'VIMASS',
+          period: 'Tháng 8/2025 – Tháng 1/2026',
+          type: 'Full-time',
+          description: '',
+          responsibilities: [
+            'Thực hiện Functional Testing, Usability Testing, và User Acceptance Testing (UAT)',
+            'Ghi nhận, phân loại và báo cáo lỗi phát sinh',
+            'Thực hiện re-test và Regression Testing sau khi fix bug',
+            'Phối hợp với team dev để đảm bảo chất lượng hệ thống',
+            'Hỗ trợ hướng dẫn người dùng và xử lý issue khi triển khai thực tế',
+            'Thu thập feedback để cải tiến sản phẩm',
+            'Lập báo cáo tiến độ và chất lượng hệ thống'
+          ],
+          skills: [
+            'Manual Testing',
+            'Test Case Design & Bug Reporting',
+            'UAT, Regression Testing',
+            'Excel / Google Sheet',
+            'Giao tiếp khách hàng & hỗ trợ triển khai'
+          ]
+        }
+      ]
+    },
+    
     // CV Section
     cv: {
       title: 'Hồ sơ của tôi',
@@ -343,7 +487,21 @@ export const translations = {
           issuer: 'Google',
           issued: 'Tháng 1/2026',
           credentialId: 'L28CCX2AYDJW',
-          link: 'https://coursera.org/share/8af8e0dff5f2f813c1d3686be4fdb4f6'
+          link: 'https://www.credly.com/badges/6204ad2d-4524-4f34-b659-76ee591b87b1/linked_in_profile'
+        },
+        googlePromptingEssentials: {
+          title: 'Google Prompting Essentials',
+          issuer: 'Coursera',
+          issued: 'Tháng 3/2026',
+          credentialId: 'DNWZJ58AEQ4Y',
+          link: 'https://www.credly.com/badges/74621970-8cfc-4f66-b4a5-7ea8c1c020da/linked_in_profile'
+        },
+        googleProjectManagement: {
+          title: 'Google Project Management Professional Certificate (v.3)',
+          issuer: 'Coursera',
+          issued: 'Tháng 3/2026',
+          credentialId: 'R5B4L0UEXRYY',
+          link: 'https://www.credly.com/badges/bada0e4b-4f8d-46fe-8fca-9d34c971c95e/linked_in_profile'
         },
         istqb: {
           title: 'ISTQB® Certified Tester - Foundation Level - 2025',
@@ -351,6 +509,20 @@ export const translations = {
           issued: 'Tháng 1/2026',
           credentialId: 'UC-5b679ca1-ffb4-4557-aa90-70510c743322',
           link: 'https://www.udemy.com/certificate/UC-5b679ca1-ff1b-4557-aa90-70510c743322/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com'
+        },
+        awsSysOps: {
+          title: 'AWS Certified SysOps Administrator Associate Hands-On + Exam',
+          issuer: 'Udemy',
+          issued: 'Tháng 2/2026',
+          credentialId: 'UC-a9b83dca-d838-42c0-9251-faca2e6fd445',
+          link: 'https://www.udemy.com/certificate/UC-a9b83dca-d838-42c0-9251-faca2e6fd445/'
+        },
+        eksBootcamp: {
+          title: 'Ultimate EKS Bootcamp by School of Devops',
+          issuer: 'Udemy',
+          issued: 'Tháng 2/2026',
+          credentialId: 'UC-83307adf-38e5-48c6-a919-25b7a180831c',
+          link: 'https://ude.my/UC-83307adf-38e5-48c6-a919-25b7a180831c'
         }
       }
     },

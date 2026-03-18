@@ -1,0 +1,329 @@
+/* Experience Section - Timeline Style */
+.experience {
+    padding: 60px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.experience-container {
+    position: relative;
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+/* Minimal timeline separator */
+.experience-container::before {
+    display: none;
+}
+
+.experience-card {
+    background: transparent;
+    border: none;
+    border-left: 2px solid var(--primary-color);
+    border-radius: 0;
+    padding: 0 0 0 1.5rem;
+    margin-bottom: 2rem;
+    transition: var(--transition);
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    animation: slideInLeft 0.8s ease-in-out forwards;
+    animation-delay: calc(var(--index, 0) * 100ms);
+    opacity: 0;
+}
+
+.experience-card:nth-child(odd) {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+
+.experience-card:nth-child(even) {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+
+
+
+.experience-card:hover {
+    background: transparent;
+    border-left-color: var(--secondary-color);
+}
+
+.experience-header {
+    margin-bottom: 1rem;
+}
+
+.experience-position {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.3rem;
+}
+
+.experience-company {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin: 0;
+    font-weight: 600;
+}
+
+.experience-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.experience-period,
+.experience-type {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+.experience-type {
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    font-size: 0.85rem;
+}
+
+.experience-description {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(3, 233, 244, 0.1);
+}
+
+.experience-details {
+    flex-grow: 1;
+}
+
+.experience-subtitle-text {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-top: 1rem;
+    margin-bottom: 0.7rem;
+}
+
+.experience-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.experience-list li {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.experience-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+    top: 0;
+}
+
+.experience-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 0.5rem;
+}
+
+.skill-tag {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    background: transparent;
+    border: 1px solid rgba(3, 233, 244, 0.2);
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    transition: var(--transition);
+}
+
+.skill-tag:hover {
+    background: transparent;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+
+
+/* Animations for timeline */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.experience-card:nth-child(odd) {
+    animation-name: slideInLeft;
+    animation-delay: calc(0.1s * var(--index, 0));
+}
+
+.experience-card:nth-child(even) {
+    animation-name: slideInRight;
+    animation-delay: calc(0.1s * var(--index, 0));
+}
+
+/* Responsive Design for Experience */
+@media (max-width: 1024px) {
+    .experience-container::before {
+        display: none;
+    }
+
+    .experience-card:nth-child(odd),
+    .experience-card:nth-child(even) {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .experience {
+        padding: 60px 0;
+    }
+
+    .experience-container::before {
+        display: none;
+    }
+
+    .experience-card {
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding: 0 0 0 1rem !important;
+        animation-name: fadeInUp !important;
+        animation-delay: calc(0.1s * var(--index, 0)) !important;
+    }
+
+    .experience-header {
+        margin-bottom: 0.8rem;
+    }
+
+    .experience-position {
+        font-size: 1.2rem;
+    }
+
+    .experience-company {
+        font-size: 0.95rem;
+    }
+
+    .experience-meta {
+        gap: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .experience-period,
+    .experience-type {
+        font-size: 0.85rem;
+    }
+
+    .experience-description {
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+        padding-bottom: 0.8rem;
+    }
+
+    .experience-list li {
+        font-size: 0.85rem;
+        padding-left: 1.2rem;
+    }
+
+    .experience-subtitle-text {
+        font-size: 0.85rem;
+        margin-top: 0.8rem;
+    }
+
+    .skill-tag {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .experience {
+        padding: 40px 0;
+    }
+
+    .experience-card {
+        padding: 0 0 0 1rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    .experience-position {
+        font-size: 1.1rem;
+    }
+
+    .experience-company {
+        font-size: 0.9rem;
+    }
+
+    .experience-description {
+        font-size: 0.9rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .experience-meta {
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+
+    .experience-list {
+        margin-bottom: 0.8rem;
+        gap: 0.4rem;
+    }
+
+    .experience-list li {
+        font-size: 0.8rem;
+        padding-left: 1rem;
+    }
+
+    .skill-tag {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.7rem;
+    }
+}

@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react';
 import './App.css';
+import './experience.css';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
+import Experience from './components/Experience';
 import Projects from './components/Projects';
 import CV from './components/CV';
 import Certifications from './components/Certifications';
@@ -61,6 +63,7 @@ function App() {
           <Hero />
           <About />
           <Skills />
+          <Experience />
           <Certifications />
           <Projects />
           <CV />
