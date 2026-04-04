@@ -192,14 +192,24 @@ const Contact = () => {
           <p className="section-subtitle">
             {t.contact.downloadCVSubtitle}
           </p>
-          <a
-            href="/PhamLeTruong_Resume.pdf"
-            download
-            className="download-cv-btn large"
-          >
-            <i className="fa-solid fa-download"></i>
-            {t.contact.downloadCVBtn}
-          </a>
+          <div className="download-buttons">
+            <a
+              href="/CV_QA_Pham_Le_Truong.pdf"
+              download
+              className="download-cv-btn large"
+            >
+              <i className="fa-solid fa-download"></i>
+              {t.contact.downloadCVBtnVI}
+            </a>
+            <a
+              href="/CV_QA_PhamLeTruong_EN.pdf"
+              download
+              className="download-cv-btn large"
+            >
+              <i className="fa-solid fa-download"></i>
+              {t.contact.downloadCVBtnEN}
+            </a>
+          </div>
         </div>
       </section>
     </>

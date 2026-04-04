@@ -68,11 +68,6 @@ const Header = () => {
               <span>{language === 'en' ? 'VI' : 'EN'}</span>
             </button>
 
-            <a href="/PhamLeTruong_Resume.pdf" download className="download-cv-btn">
-              <i className="fa-solid fa-download"></i>
-              <span>{t.nav.downloadCV}</span>
-            </a>
-
             <button className={`mobile-menu-toggle ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu} aria-label="Toggle mobile menu">
               <span></span>
               <span></span>

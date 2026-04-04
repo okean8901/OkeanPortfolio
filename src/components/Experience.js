@@ -20,7 +20,6 @@ const Experience = () => {
               </div>
               <div className="experience-meta">
                 <time className="experience-period" dateTime={job.period}>{job.period}</time>
-                <span className="experience-type">{job.type}</span>
               </div>
               <p className="experience-description">{job.description}</p>
               

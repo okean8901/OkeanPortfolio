@@ -46,7 +46,8 @@ src/
 public/
 ├── IMG/                    # Images
 ├── fontawesome-free-6.5.2/ # FontAwesome assets
-├── PhamLeTruong_Resume.pdf # Resume PDF
+├── CV_QA_Pham_Le_Truong.pdf    # Resume PDF (VI)
+├── CV_QA_PhamLeTruong_EN.pdf   # Resume PDF (EN)
 ├── index.html             # HTML template
 └── manifest.json          # PWA manifest
 ```

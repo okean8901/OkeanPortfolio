@@ -9,7 +9,9 @@ export const translations = {
       projects: 'Projects',
       contact: 'Contact',
       certifications: 'Certifications',
-      downloadCV: 'Download CV'
+      downloadCV: 'Download CV',
+      downloadCVVI: 'Download CV (VI)',
+      downloadCVEN: 'Download CV (EN)'
     },
     
     // Hero Section
@@ -142,7 +144,6 @@ export const translations = {
           position: 'QA Tester',
           company: 'Sabo Game',
           period: 'Jan 2026 – Present',
-          type: 'On-site',
           description: 'Performing gameplay, UI/UX and feature testing in games',
           responsibilities: [
             'Design and execute test cases for main features: character systems, maps, NPCs, events and in-game activities',
@@ -166,7 +167,6 @@ export const translations = {
           position: 'Tester / QA – Software Deployment',
           company: 'VIMASS',
           period: 'Aug 2025 – Jan 2026',
-          type: 'Full-time',
           description: 'Participated in testing and deploying payment, education and public service systems in real-world environments',
           responsibilities: [
             'Perform Functional Testing, Usability Testing, and User Acceptance Testing (UAT)',
@@ -190,8 +190,8 @@ export const translations = {
     
     // CV Section
     cv: {
-      title: 'My Resume',
-      subtitle: 'View my detailed resume'
+      title: 'My CVs',
+      subtitle: 'Download my resume in Vietnamese or English'
     },
     
     // Certifications Section
@@ -240,6 +240,27 @@ export const translations = {
           issued: 'Feb 2026',
           credentialId: 'UC-83307adf-38e5-48c6-a919-25b7a180831c',
           link: 'https://ude.my/UC-83307adf-38e5-48c6-a919-25b7a180831c'
+        },
+        pmiEssentialsMore: {
+          title: 'PMI Essentials M.O.R.E. Maximizing Project Success',
+          issuer: 'Project Management Institute',
+          issued: 'Apr 2026',
+          credentialId: 'cac2d29c-743d-4592-b3ad-4a572a2ef62e',
+          link: 'https://www.credly.com/badges/6f52e04a-04b4-4b65-8d68-e7693b5083c7/linked_in_profile'
+        },
+        registeredScrumBasics: {
+          title: 'Registered Scrum Basics',
+          issuer: 'Agile Education by Scrum Inc.™',
+          issued: 'Mar 2026',
+          credentialId: 'RSB-1427263',
+          link: 'https://s3.amazonaws.com/scruminc-certs/RSB-1427263'
+        },
+        pmiEssentialsSevenAiPatterns: {
+          title: 'PMI® Essentials: Seven AI Project Patterns',
+          issuer: 'Project Management Institute',
+          issued: 'Mar 2026',
+          credentialId: '76b1a3bb-04b9-45eb-96f9-3b1233e49494',
+          link: 'https://www.credly.com/badges/bae4fe5b-2988-47f5-b018-39ba551566cc/linked_in_profile'
         }
       }
     },
@@ -261,6 +282,8 @@ export const translations = {
       downloadCV: 'Download My CV',
       downloadCVSubtitle: 'Want to know more? Check out my full CV',
       downloadCVBtn: 'Download CV',
+      downloadCVBtnVI: 'Download CV (VI)',
+      downloadCVBtnEN: 'Download CV (EN)',
       notifications: {
         fillFields: 'Please fill in all fields',
         validEmail: 'Please enter a valid email address',
@@ -292,7 +315,9 @@ export const translations = {
       projects: 'Dự án',
       contact: 'Liên hệ',
       certifications: 'Chứng chỉ',
-      downloadCV: 'Tải CV'
+      downloadCV: 'Tải CV',
+      downloadCVVI: 'Tải CV (VI)',
+      downloadCVEN: 'Tải CV (EN)'
     },
     
     // Hero Section
@@ -425,7 +450,6 @@ export const translations = {
           position: 'QA Tester',
           company: 'Sabo Game',
           period: 'Tháng 1/2026 – Hiện tại',
-          type: 'Tại văn phòng',
           description: '',
           responsibilities: [
             'Thiết kế và thực thi test case cho các chức năng chính: hệ thống nhân vật, map, NPC, event và hoạt động trong game',
@@ -449,7 +473,6 @@ export const translations = {
           position: 'Tester / QA – Software Deployment',
           company: 'VIMASS',
           period: 'Tháng 8/2025 – Tháng 1/2026',
-          type: 'Full-time',
           description: '',
           responsibilities: [
             'Thực hiện Functional Testing, Usability Testing, và User Acceptance Testing (UAT)',
@@ -473,8 +496,8 @@ export const translations = {
     
     // CV Section
     cv: {
-      title: 'Hồ sơ của tôi',
-      subtitle: 'Xem CV chi tiết của mình'
+      title: 'CV của tôi',
+      subtitle: 'Tải CV của tôi bằng tiếng Việt hoặc tiếng Anh'
     },
     
     // Certifications Section
@@ -523,6 +546,27 @@ export const translations = {
           issued: 'Tháng 2/2026',
           credentialId: 'UC-83307adf-38e5-48c6-a919-25b7a180831c',
           link: 'https://ude.my/UC-83307adf-38e5-48c6-a919-25b7a180831c'
+        },
+        pmiEssentialsMore: {
+          title: 'PMI Essentials M.O.R.E. Maximizing Project Success',
+          issuer: 'Project Management Institute',
+          issued: 'Tháng 4/2026',
+          credentialId: 'cac2d29c-743d-4592-b3ad-4a572a2ef62e',
+          link: 'https://www.credly.com/badges/6f52e04a-04b4-4b65-8d68-e7693b5083c7/linked_in_profile'
+        },
+        registeredScrumBasics: {
+          title: 'Registered Scrum Basics',
+          issuer: 'Agile Education by Scrum Inc.™',
+          issued: 'Tháng 3/2026',
+          credentialId: 'RSB-1427263',
+          link: 'https://s3.amazonaws.com/scruminc-certs/RSB-1427263'
+        },
+        pmiEssentialsSevenAiPatterns: {
+          title: 'PMI® Essentials: Seven AI Project Patterns',
+          issuer: 'Project Management Institute',
+          issued: 'Tháng 3/2026',
+          credentialId: '76b1a3bb-04b9-45eb-96f9-3b1233e49494',
+          link: 'https://www.credly.com/badges/bae4fe5b-2988-47f5-b018-39ba551566cc/linked_in_profile'
         }
       }
     },
@@ -544,6 +588,8 @@ export const translations = {
       downloadCV: 'Tải CV của tôi',
       downloadCVSubtitle: 'Muốn biết thêm? Xem CV đầy đủ của mình nhé',
       downloadCVBtn: 'Tải CV',
+      downloadCVBtnVI: 'Tải CV (VI)',
+      downloadCVBtnEN: 'Tải CV (EN)',
       notifications: {
         fillFields: 'Vui lòng điền đầy đủ tất cả các trường',
         validEmail: 'Vui lòng nhập địa chỉ email hợp lệ',
